@@ -113,6 +113,14 @@ class MiniMap():
         return frame
 
 
+    def draw_keypoints_on_vid(self, frame, keypoints):
+        for i in range(0, len(keypoints), 2):
+            point = (keypoints[i], keypoints[i + 1])
+            cv2.circle(frame, point, 3, (255, 255, 255), -1)
+            cv2.putText(frame, f"KP: {i // 2}", point, cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+
+
+
     def update(self, frame, thing):
         frame = self.__drawOnMiniMap(frame, thing)
         return frame
