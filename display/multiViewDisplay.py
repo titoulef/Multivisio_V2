@@ -4,7 +4,7 @@ import numpy as np
 
 class MultiViewDisplay:
     def __init__(self, window_name="Multi-View Display", layout="2x2", show_titles=True, margin=10,
-                 window_size=(1280, 720)):
+                 window_size=(720, 720)):
         """
         Initialise le gestionnaire d'affichage multi-vues.
 

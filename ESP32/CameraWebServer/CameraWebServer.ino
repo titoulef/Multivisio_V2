@@ -5,7 +5,7 @@
 
 // Configuration WiFi
 const char* ssid = "iPhone de Titouan";
-const char* password = "cacapipi";
+const char* password = "mdp";
 
 // Configuration de la caméra (pour ESP32-CAM)
 #define PWDN_GPIO_NUM     32
@@ -57,7 +57,7 @@ void setup() {
   // Configuration pour une bonne résolution à 15 fps
   config.pixel_format = PIXFORMAT_JPEG;
   config.frame_size = FRAMESIZE_UXGA; // 1600x1200
-  config.jpeg_quality = 15; // 0-63 (plus bas = meilleure qualité)
+  config.jpeg_quality = 30; // 0-63 (plus bas = meilleure qualité)
   config.fb_count = 2;
 
   // Initialisation de la caméra

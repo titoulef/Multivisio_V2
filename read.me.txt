@@ -1,8 +1,0 @@
-Améliorations depuis la V1 :
-
-travailler sur des données 2D
--> des instanciations calcul de self.coord_2D
--> essayer de trouver une solutions pour le double for (peut etre en le restreignant à une zone plus petite autour de la valise)
-	-> peut etre se baser sur la meme logique que le jeux d'echec
--> gestion des couleurs 
--> draw final
